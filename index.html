@@ -6,8 +6,111 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .slider_image_1{
+            background-image: url('Images/1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 12px;
+        }
+
+        .slider_image_2{
+            background-image: url('Images/2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 12px;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="font-manrope">
+    <header class="container mx-auto ">
+        <nav>
+            <div class="navbar bg-base-100 w-full">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-0 mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class=" text-base font-normal menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a class="text-red-600">Home</a></li>
+                      <li>
+                        <a>About</a>
+                        
+                      </li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-2xl lg:text-3xl font-extrabold">Hockey<span class="text-red-600">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-base font-normal ">
+                    <li><a class="text-red-600">Home</a></li>
+                      <li>
+                        <a>About</a>
+                        
+                      </li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end ">
+                    <svg class="mr-6 hidden lg:block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_5_6)">
+                        <path d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 21L15 15" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_5_6">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                  <a class="btn bg-red-600 text-white">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <div class="mt-8 lg:mt-16">
+            <div class="carousel w-full h-[200px] lg:h-[550px]">
+                <div id="slide1" class="slider_image_1 carousel-item relative w-full">
+                    <div class=" hidden absolute bottom-8 right-8 rounded-xl w-[335px] h-[137px] lg:w-[570px] lg:h-[165px] bg-[#131318] p-4 lg:p-8 lg:flex flex-col justify-center text-white items-start">
+                        <h3 class="text-lg lg:text-2xl w-[303px] lg:w-[395px] ">Meet all the heroes from the field</h3>
+                        <p class="mt-2 lg:mt-4 text-sm lg:text-base font-medium w-[35px] lg:w-[505px]">Explore the captivating world of hockey and meet its heroes on the field, showcasing skill, passion, and sportsmanship in action </p>
+                    </div>
+                  <div class="absolute flex justify-center items-end h-full w-full gap-3 lg:justify-start lg:ml-8">
+                    <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-none mb-5">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-none mb-5">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="slider_image_2 carousel-item relative w-full">
+                    <div class=" hidden absolute bottom-8 right-8 rounded-xl w-[335px] h-[137px] lg:w-[570px] lg:h-[165px] bg-[#131318] p-4 lg:p-8 lg:flex flex-col justify-center text-white items-start">
+                        <h3 class="text-lg lg:text-2xl w-[303px] lg:w-[395px] ">Meet all the heroes from the field</h3>
+                        <p class="mt-2 lg:mt-4 text-sm lg:text-base font-medium w-[35px] lg:w-[505px]">Explore the captivating world of hockey and meet its heroes on the field, showcasing skill, passion, and sportsmanship in action </p>
+                    </div>
+                  <div class="absolute flex justify-center items-end h-full w-full gap-3 lg:justify-start lg:ml-8">
+                    <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-none mb-5">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-none mb-5">❯</a>
+                  </div>
+                </div> 
+              </div>
+        </div>
+        <div class="mt-4 lg:hidden  rounded-xl w-full h-[137px] bg-[#131318] p-4 lg:p-8 flex flex-col justify-center text-white items-center">
+            <h3 class="text-lg lg:text-2xl  w-[303px] ">Meet all the heroes from the field</h3>
+            <p class="mt-2 lg:mt-4 text-sm   lg:text-base font-medium w-[303px] lg:w-[505px]">Explore the captivating world of hockey and meet its heroes on the field, showcasing skill, passion, and sportsmanship in action </p>
+        </div>
+    </header>
+
 </body>
 </html>
