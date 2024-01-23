@@ -16,7 +16,7 @@
         }
 
         .slider_image_1{
-            background-image: url('Images/1.png');
+            background:  url('Images/1.png'),lightgray 0px 0px / 100% 100% no-repeat;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -24,16 +24,68 @@
         }
 
         .slider_image_2{
-            background-image: url('Images/2.png');
+            background: url('Images/2.png'),lightgray 0px 0px / 100% 100% no-repeat;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 12px;
         }
+
+        .dashed_border{
+            
+            width: 100%;
+            border: 3px dashed #13131833;
+            
+        }
+
+        .program_image_1{
+            background: url('Images/2.png'), rgba(19, 19, 24, 0.50);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 12px;
+        }
+        .program_image_2{
+            background: url('Images/3.png'), rgba(19, 19, 24, 0.50);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 12px;
+        }
+        .program_image_3{
+            background: url('Images/4.png'), rgba(19, 19, 24, 0.50);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 12px;
+        }
+
+        .btn-primary{
+            background-color: #FF4240;
+            border: 1px solid #FF4240;
+            border-radius: 8px;
+            padding: 10px 20px;
+            width: 180px;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+
+        }
+
+        /* Product Image*/
+        /*.product_1{
+            background-image: url('Images/5.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 12px;
+            height: 100%;
+        } */
     </style>
 </head>
-<body class="font-manrope">
-    <header class="container mx-auto ">
+<body class="font-manrope box-border">
+    <header class="container mx-auto w-[93%] lg:w-auto">
+        <!-- Navbar section -->
         <nav>
             <div class="navbar bg-base-100 w-full">
                 <div class="navbar-start">
@@ -82,6 +134,7 @@
                 </div>
               </div>
         </nav>
+        <!-- Banner section -->
         <div class="mt-8 lg:mt-16">
             <div class="carousel w-full h-[200px] lg:h-[550px]">
                 <div id="slide1" class="slider_image_1 carousel-item relative w-full">
@@ -111,6 +164,442 @@
             <p class="mt-2 lg:mt-4 text-sm   lg:text-base font-medium w-[303px] lg:w-[505px]">Explore the captivating world of hockey and meet its heroes on the field, showcasing skill, passion, and sportsmanship in action </p>
         </div>
     </header>
+    <main class="container w-[93%] lg:w-auto mt-10 lg:mt-24 mx-auto border-2 border-red-500">
+        <!-- Professional Hockey Section -->
+        <section>
+        <!-- Professional section -->
+            <div class="dashed_border"></div>
+        <div class="w-full flex flex-col justify-center items-center my-6 lg:my-8">
+            <h1 class="w-[290px] lg:w-[475px] text-center font-extrabold text-xl lg:text-4xl">Professional Hockeys Club</h1>
+            <p class="w-[295px] lg:w-[640px] mt-4 lg:mt-6 text-[#13131899] text-center text-sm lg:text-base font-medium">Professional Hockey's Club: Elevate your passion for the sport with exclusive membership, thrilling matches, and a community of avid hockey enthusiasts. Join us!</p>
+        </div>
+        <div class="dashed_border"></div>
+        <div class="mt-6 gap-6 lg:gap-0 lg:mt-12 mb-10 lg:mb-24 w-full flex flex-col lg:flex-row justify-between items-center ">
+            <div class="flex flex-1 flex-col justify-center items-center">
+                <div class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                        <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                        <path d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z" fill="#FF4240"/>
+                    </svg>
+                    <h3 class="text-3xl font-extrabold absolute top-[41.5px] left-[29px]">87%</h3>
+                </div>
+                <p class="text-xl font-semibold mt-6 mb-4">Prayer Facility</p>
+                <p class="w-[250px] text-base font-normal text-center text-[#13131899]">Sacred space for peaceful reflection and prayer</p>
+            </div>
+            <div class="flex flex-1 flex-col justify-center items-center">
+                <div class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                        <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                        <path d="M114.266 60C117.433 60 120.028 57.4266 119.726 54.274C118.506 41.5436 113.241 29.4793 104.626 19.8933C94.7273 8.87961 81.1057 1.91535 66.3817 0.340346C51.6576 -1.23466 36.8712 2.69086 24.8672 11.3617C12.8632 20.0325 4.48966 32.836 1.35752 47.3091C-1.77461 61.7821 0.55594 76.9021 7.90081 89.7603C15.2457 102.618 27.086 112.306 41.1438 116.96C55.2016 121.614 70.4837 120.905 84.0501 114.969C95.858 109.803 105.64 100.995 112.015 89.9081C113.593 87.1625 112.294 83.7461 109.41 82.4366C106.526 81.1272 103.155 82.426 101.515 85.1352C96.3546 93.6587 88.6662 100.431 79.4529 104.462C68.4798 109.263 56.1188 109.836 44.7481 106.072C33.3775 102.308 23.8005 94.4719 17.8596 84.0716C11.9187 73.6713 10.0336 61.4414 12.567 49.7349C15.1005 38.0284 21.8734 27.6723 31.5828 20.6589C41.2923 13.6455 53.2523 10.4704 65.1618 11.7443C77.0714 13.0182 88.0892 18.6513 96.0955 27.5597C102.818 35.0393 107.018 44.3841 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z" fill="#49D293"/>
+                        </svg>
+                    <h3 class="text-3xl font-extrabold absolute top-[41.5px] left-[29px]">95%</h3>
+                </div>
+                <p class="text-xl font-semibold mt-6 mb-4">Experienced Coach</p>
+                <p class="w-[250px] text-base font-normal text-center text-[#13131899]">Guiding teams to success with wisdom and expertise</p>
+            </div>
+            <div class="flex flex-1 flex-col justify-center items-center">
+                <div class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                        <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                        <path d="M110.134 80.7677C113.06 81.9797 116.443 80.5956 117.371 77.5673C120.973 65.8033 120.885 53.165 117.038 41.3814C112.596 27.7733 103.435 16.2017 91.2094 8.75578C78.9837 1.30986 64.4986 -1.51971 50.3695 0.777937C36.2403 3.07558 23.3982 10.349 14.1616 21.2851C4.92507 32.2212 -0.0972474 46.0992 0.00142546 60.4136C0.100098 74.728 5.31326 88.5355 14.6997 99.3431C24.0862 110.151 37.0273 117.247 51.1868 119.349C63.4479 121.17 75.9229 119.143 86.9184 113.623C89.7488 112.202 90.5474 108.635 88.8628 105.953C87.1783 103.271 83.6496 102.497 80.7878 103.854C72.1379 107.954 62.4244 109.423 52.8714 108.005C41.4186 106.304 30.9511 100.565 23.3589 91.8227C15.7666 83.0809 11.55 71.9127 11.4702 60.3345C11.3903 48.7563 15.4526 37.5311 22.9236 28.6854C30.3946 19.8398 40.782 13.9567 52.2103 12.0982C63.6387 10.2398 75.3549 12.5285 85.2438 18.5511C95.1326 24.5737 102.542 33.9334 106.135 44.9403C109.132 54.1213 109.309 63.9437 106.713 73.1577C105.855 76.2061 107.208 79.5556 110.134 80.7677Z" fill="#FFB546"/>
+                    </svg>
+                    <h3 class="text-3xl font-extrabold absolute top-[41.5px] left-[29px]">90%</h3>
+                </div>
+                <p class="text-xl font-semibold mt-6 mb-4">Senior Player</p>
+                <p class="w-[250px] text-base font-normal text-center text-[#13131899]">Seasoned athlete showcasing prowess and leadership skills</p>
+            </div>
+            <div class="flex flex-1 flex-col justify-center items-center">
+                <div class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                        <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                        <path d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z" fill="#4C8DF1"/>
+                    </svg>
+                    <h3 class="text-3xl font-extrabold absolute top-[41.5px] left-[29px]">80%</h3>
+                </div>
+                <p class="text-xl font-semibold mt-6 mb-4">Training Ground</p>
+                <p class="w-[250px] text-base font-normal text-center text-[#13131899]">Dedicated space for honing skills and teamwork</p>
+            </div>
+        </div>
+        <div class="dashed_border"></div>
+        <div class="w-full flex flex-col justify-center items-center my-6 lg:my-8">
+            <h1 class="w-[290px] lg:w-[475px] text-center font-extrabold text-xl lg:text-4xl">Program Sections</h1>
+            <p class="w-[295px] lg:w-[640px] mt-4 lg:mt-6 text-[#13131899] text-center text-sm lg:text-base font-medium">Discover our dynamic hockey programs, tailored for all skill levels. Join a community fostering growth, teamwork, and sportsmanship on ice</p>
+        </div>
+        <div class="dashed_border"></div>
+        </section>
+        <!-- Porgram section -->
+        <section class="mt-6 lg:mt-12 mb-10 lg:mb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 grid-rows-1 lg:grid-rows-7 w-full gap-6">
+                <div class="program_image_1 lg:row-span-3 col-span-12 lg:col-span-6 h-[244px] lg:h-[340px] ">
+                  <div class="w-full h-full bg-[#13131880] rounded-xl text-white lg:pl-10 lg:pt-24 flex flex-col justify-center items-start pl-6">
+                    <h3 class="w-[155px] lg:w-[255px] text-xl lg:text-3xl font-extrabold">Junior Program</h3>
+                    <p class="mt-3 lg:mt-4 mb-4 lg:mb-6 text-sm lg:text-base font-medium w-[277px] lg:w-[495px]">Nurture young talent in our Junior Program—fostering skills, camaraderie, and a love for hockey, building future champions with passion and dedication</p>
+                    <button class="btn-primary w-[170px] lg:w-[188px] px-4 py-2 lg:px-6 lg:py-4">Register Now!</button>
+                </div>                      
+                </div>
+                <div class="program_image_2 lg:row-span-3 col-span-12 lg:col-span-6 h-[244px] lg:h-[340px]">
+                   <div class="w-full h-full bg-[#13131880] rounded-xl text-white lg:pl-10 lg:pt-24 flex flex-col justify-center items-start pl-6">
+                    <h3 class="w-[155px] lg:w-[255px] text-xl lg:text-3xl font-extrabold">Junior Program</h3>
+                    <p class="mt-3 lg:mt-4 mb-4 lg:mb-6 text-sm lg:text-base font-medium w-[277px] lg:w-[495px]">Nurture young talent in our Junior Program—fostering skills, camaraderie, and a love for hockey, building future champions with passion and dedication</p>
+                    <button class="btn-primary w-[170px] lg:w-[188px] px-4 py-2 lg:px-6 lg:py-4">Register Now!</button>
+                   </div> 
+                </div>
+                <div class="program_image_3  lg:row-span-4 col-span-12   h-[244px] lg:h-[450px]">
+                    <div class="w-full h-full bg-[#13131880] rounded-xl text-white lg:pl-10 lg:pt-[175px] flex flex-col justify-center items-start pl-6">
+                        <h3 class="w-[155px] lg:w-[255px] text-xl lg:text-3xl font-extrabold">Junior Program</h3>
+                        <p class="mt-3 lg:mt-4 mb-4 lg:mb-6 text-sm lg:text-base font-medium w-[277px] lg:w-[495px]">Nurture young talent in our Junior Program—fostering skills, camaraderie, and a love for hockey, building future champions with passion and dedication</p>
+                        <button class="btn-primary w-[170px] lg:w-[188px] px-4 py-2 lg:px-6 lg:py-4">Register Now!</button>
+                       </div> 
+                </div>
+            </div>
+        </section>
+        <div class="dashed_border"></div>
+        <div class="w-full flex flex-col justify-center items-center my-6 lg:my-8">
+            <h1 class="w-[290px] lg:w-[475px] text-center font-extrabold text-xl lg:text-4xl">Our New Products</h1>
+            <p class="w-[295px] lg:w-[640px] mt-4 lg:mt-6 text-[#13131899] text-center text-sm lg:text-base font-medium">Discover our latest arrivals, blending innovation and style. Our new products redefine excellence, offering quality, functionality, and modern design solutions</p>
+        </div>
+        <div class="dashed_border"></div>
+        <!-- Product Section -->
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6 lg:mt-12">
+                <div class="w-full lg:w-[755px] h-[460px] lg:h-[220px] border-2 border-[#1313181a] rounded-2xl flex gap-6 lg:gap-5 justify-evenly lg:flex-row flex-col py-2 lg:py-0">
+                    <div class="w-[90%] h-[50%] mx-auto lg:mx-0 lg:w-[25%] lg:h-auto  flex items-center justify-center mt-5 lg:mt-0">
+                        <img class="w-full lg:w-auto h-full  lg:h-auto" src="Images/5.png" alt="">
+                    </div>
+                    <div class="lg:w-[70%] mx-auto lg:mx-0 w-[90%] flex flex-col items-start   justify-evenly h-[45%] lg:h-auto">
+                        <div class="flex gap-4">
+                            <div class="flex gap-2">
+                                <img src="start.svg" alt="">
+                                <p class="text-[#13131899]">5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="eyes.svg" alt="">
+                                <p class="text-[#13131899]">20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="love.svg" alt="">
+                                <p class="text-[#13131899]">200</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-extrabold">World Cup Flags Football</h3>
+                            <p class="w-270px lg:w-[307px] mt-3   text-[#13131899]">Global football celebration unites nations with vibrant World Cup flags</p>
+                        </div>
+                        <div class="flex  justify-between w-[97.6%] ">
+                            <h3 class="text-red-600 font-extrabold text-lg">Price - $22.00</h3>
+                             <div class="flex gap-2 items-center">
+                                <img src="cart.svg" alt="">
+                                <p class="w-[137px]">Delivery Fee : Free</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[755px] h-[460px] lg:h-[220px] border-2 border-[#1313181a] rounded-2xl flex gap-6 lg:gap-5 justify-evenly lg:flex-row flex-col py-2 lg:py-0">
+                    <div class="w-[90%] h-[50%] mx-auto lg:mx-0 lg:w-[25%] lg:h-auto  flex items-center justify-center mt-5 lg:mt-0">
+                        <img class="w-full lg:w-auto h-full  lg:h-auto" src="Images/6.png" alt="">
+                    </div>
+                    <div class="lg:w-[70%] mx-auto lg:mx-0 w-[90%] flex flex-col items-start   justify-evenly h-[45%] lg:h-auto">
+                        <div class="flex gap-4">
+                            <div class="flex gap-2">
+                                <img src="start.svg" alt="">
+                                <p class="text-[#13131899]">5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="eyes.svg" alt="">
+                                <p class="text-[#13131899]">20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="love.svg" alt="">
+                                <p class="text-[#13131899]">200</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-extrabold">World Cup Flags Football</h3>
+                            <p class="w-270px lg:w-[307px] mt-3   text-[#13131899]">Global football celebration unites nations with vibrant World Cup flags</p>
+                        </div>
+                        <div class="flex  justify-between w-[97.6%] ">
+                            <h3 class="text-red-600 font-extrabold text-lg">Price - $22.00</h3>
+                             <div class="flex gap-2 items-center">
+                                <img src="cart.svg" alt="">
+                                <p class="w-[137px]">Delivery Fee : Free</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[755px] h-[460px] lg:h-[220px] border-2 border-[#1313181a] rounded-2xl flex gap-6 lg:gap-5 justify-evenly lg:flex-row flex-col py-2 lg:py-0">
+                    <div class="w-[90%] h-[50%] mx-auto lg:mx-0 lg:w-[25%] lg:h-auto  flex items-center justify-center mt-5 lg:mt-0">
+                        <img class="w-full lg:w-auto h-full  lg:h-auto" src="Images/7.png" alt="">
+                    </div>
+                    <div class="lg:w-[70%] mx-auto lg:mx-0 w-[90%] flex flex-col items-start   justify-evenly h-[45%] lg:h-auto">
+                        <div class="flex gap-4">
+                            <div class="flex gap-2">
+                                <img src="start.svg" alt="">
+                                <p class="text-[#13131899]">5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="eyes.svg" alt="">
+                                <p class="text-[#13131899]">20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="love.svg" alt="">
+                                <p class="text-[#13131899]">200</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-extrabold">World Cup Flags Football</h3>
+                            <p class="w-270px lg:w-[307px] mt-3   text-[#13131899]">Global football celebration unites nations with vibrant World Cup flags</p>
+                        </div>
+                        <div class="flex  justify-between w-[97.6%] ">
+                            <h3 class="text-red-600 font-extrabold text-lg">Price - $22.00</h3>
+                             <div class="flex gap-2 items-center">
+                                <img src="cart.svg" alt="">
+                                <p class="w-[137px]">Delivery Fee : Free</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[755px] h-[460px] lg:h-[220px] border-2 border-[#1313181a] rounded-2xl flex gap-6 lg:gap-5 justify-evenly lg:flex-row flex-col py-2 lg:py-0">
+                    <div class="w-[90%] h-[50%] mx-auto lg:mx-0 lg:w-[25%] lg:h-auto  flex items-center justify-center mt-5 lg:mt-0">
+                        <img class="w-full lg:w-auto h-full  lg:h-auto" src="Images/8.png" alt="">
+                    </div>
+                    <div class="lg:w-[70%] mx-auto lg:mx-0 w-[90%] flex flex-col items-start   justify-evenly h-[45%] lg:h-auto">
+                        <div class="flex gap-4">
+                            <div class="flex gap-2">
+                                <img src="start.svg" alt="">
+                                <p class="text-[#13131899]">5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="eyes.svg" alt="">
+                                <p class="text-[#13131899]">20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="love.svg" alt="">
+                                <p class="text-[#13131899]">200</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-extrabold">World Cup Flags Football</h3>
+                            <p class="w-270px lg:w-[307px] mt-3   text-[#13131899]">Global football celebration unites nations with vibrant World Cup flags</p>
+                        </div>
+                        <div class="flex  justify-between w-[97.6%] ">
+                            <h3 class="text-red-600 font-extrabold text-lg">Price - $22.00</h3>
+                             <div class="flex gap-2 items-center">
+                                <img src="cart.svg" alt="">
+                                <p class="w-[137px]">Delivery Fee : Free</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[755px] h-[460px] lg:h-[220px] border-2 border-[#1313181a] rounded-2xl flex gap-6 lg:gap-5 justify-evenly lg:flex-row flex-col py-2 lg:py-0">
+                    <div class="w-[90%] h-[50%] mx-auto lg:mx-0 lg:w-[25%] lg:h-auto  flex items-center justify-center mt-5 lg:mt-0">
+                        <img class="w-full lg:w-auto h-full  lg:h-auto" src="Images/9.png" alt="">
+                    </div>
+                    <div class="lg:w-[70%] mx-auto lg:mx-0 w-[90%] flex flex-col items-start   justify-evenly h-[45%] lg:h-auto">
+                        <div class="flex gap-4">
+                            <div class="flex gap-2">
+                                <img src="start.svg" alt="">
+                                <p class="text-[#13131899]">5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="eyes.svg" alt="">
+                                <p class="text-[#13131899]">20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="love.svg" alt="">
+                                <p class="text-[#13131899]">200</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-extrabold">World Cup Flags Football</h3>
+                            <p class="w-270px lg:w-[307px] mt-3   text-[#13131899]">Global football celebration unites nations with vibrant World Cup flags</p>
+                        </div>
+                        <div class="flex  justify-between w-[97.6%] ">
+                            <h3 class="text-red-600 font-extrabold text-lg">Price - $22.00</h3>
+                             <div class="flex gap-2 items-center">
+                                <img src="cart.svg" alt="">
+                                <p class="w-[137px]">Delivery Fee : Free</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[755px] h-[460px] lg:h-[220px] border-2 border-[#1313181a] rounded-2xl flex gap-6 lg:gap-5 justify-evenly lg:flex-row flex-col py-2 lg:py-0">
+                    <div class="w-[90%] h-[50%] mx-auto lg:mx-0 lg:w-[25%] lg:h-auto  flex items-center justify-center mt-5 lg:mt-0">
+                        <img class="w-full lg:w-auto h-full  lg:h-auto" src="Images/10.png" alt="">
+                    </div>
+                    <div class="lg:w-[70%] mx-auto lg:mx-0 w-[90%] flex flex-col items-start   justify-evenly h-[45%] lg:h-auto">
+                        <div class="flex gap-4">
+                            <div class="flex gap-2">
+                                <img src="start.svg" alt="">
+                                <p class="text-[#13131899]">5.0</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="eyes.svg" alt="">
+                                <p class="text-[#13131899]">20</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="love.svg" alt="">
+                                <p class="text-[#13131899]">200</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-extrabold">World Cup Flags Football</h3>
+                            <p class="w-270px lg:w-[307px] mt-3   text-[#13131899]">Global football celebration unites nations with vibrant World Cup flags</p>
+                        </div>
+                        <div class="flex  justify-between w-[97.6%] ">
+                            <h3 class="text-red-600 font-extrabold text-lg">Price - $22.00</h3>
+                             <div class="flex gap-2 items-center">
+                                <img src="cart.svg" alt="">
+                                <p class="w-[137px]">Delivery Fee : Free</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+               
+                
+            </div>
+        </section>
+        <div class="dashed_border mt-10 lg:mt-24"></div>
 
+        <!-- Client Section -->
+        <section>
+            <div class="w-full flex flex-col justify-center items-center my-6 lg:my-8">
+                <h1 class="w-[290px] lg:w-[475px] text-center font-extrabold text-xl lg:text-4xl">Clients Question</h1>
+                <p class="w-[295px] lg:w-[640px] mt-4 lg:mt-6 text-[#13131899] text-center text-sm lg:text-base font-medium">Discover insights, solutions, and expert advice as we address clients' questions, ensuring clarity and satisfaction in every consultation and interaction</p>
+            </div>
+            <div class="dashed_border"></div>
+
+            <div class="w-full rounded-2xl border-2 mt-6 lg:mt-12 lg:h-[630px] border-[#1313181a] flex items-center lg:flex-row lg:justify-between flex-col gap-6 lg:gap-[15px] lg:items-center">
+                <div class="w-[90%] lg:w-[40%] lg:h-[500px]   mx-auto lg:mx-0 lg:ml-8  mt-6 lg:mt-0">
+                    <img class="lg:w-full lg:h-full" src="Images/11.png" alt="">
+                </div>
+                <div class="w-[90%] lg:w-[800px] lg:mr-10">
+                    <div class="collapse collapse-plus bg-transparent border-b-2 border-[#1313181a] rounded-none py-2 lg:py-3">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-bold ">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content w-[95%] "> 
+                          <p class="text-base font-normal">Discover top-notch hockey gear, from cutting-edge sticks to protective gear, ensuring peak performance on the field</p>
+                        </div>
+                      </div>
+                    <div class="collapse collapse-plus bg-transparent border-b-2 border-[#1313181a] rounded-none py-2 lg:py-3">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-bold ">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content w-[95%]"> 
+                          <p class="text-base font-normal">Elevate your game with professional hockey training, honing skills, strategies, and fitness for a competitive edge</p>
+                        </div>
+                      </div>
+                    <div class="collapse collapse-plus bg-transparent border-b-2 border-[#1313181a] rounded-none py-2 lg:py-3">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-bold ">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content w-[95%]"> 
+                          <p class="text-base font-normal">Experience personalized coaching from skilled professionals, tailoring hockey lessons to individual needs for accelerated skill development</p>
+                        </div>
+                      </div>
+                    <div class="collapse collapse-plus bg-transparent border-b-2 border-[#1313181a] rounded-none py-2 lg:py-3">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-bold ">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content w-[95%]"> 
+                          <p class="text-base font-normal">Embark on thrilling ski touring adventures, blending hockey passion with scenic exploration for an unforgettable icy escapade</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-transparent border-b-2 border-[#1313181a] rounded-none py-2 lg:py-3">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-bold ">
+                            Booking
+                        </div>
+                        <div class="collapse-content w-[95%]"> 
+                          <p class="text-base font-normal">Seamless booking process for hockey sessions, lessons, and ski touring adventures, ensuring a hassle-free and enjoyable experience</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-transparent border-b-2 border-[#1313181a] rounded-none py-2 lg:py-3">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-bold ">
+                            Pricings
+                        </div>
+                        <div class="collapse-content w-[95%]"> 
+                          <p class="text-base font-normal">Transparent pricing options for hockey services, private lessons, and ski touring adventures, offering value and flexibility for enthusiasts</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        <div class="dashed_border mt-10 lg:mt-24"></div>
+
+
+        </section>
+
+        <!-- Get In Touch section -->
+        <section>
+            <div class="w-full flex flex-col justify-center items-center my-6 lg:my-8">
+                <h1 class="w-[290px] lg:w-[475px] text-center font-extrabold text-xl lg:text-4xl">Get In Touch</h1>
+                <p class="w-[295px] lg:w-[640px] mt-4 lg:mt-6 text-[#13131899] text-center text-sm lg:text-base font-medium">Connect with us through 'Get In Touch' for inquiries, collaborations, or assistance. Your journey in hockey begins with a simple message</p>
+            </div>
+            <div class="dashed_border mb-6 lg:mb-12"></div>
+            <div class="w-full lg:h-[780px] flex lg:flex-row flex-col gap-4 ">
+                <div class="w-[100%] lg:w-[40%] h-auto border-2 border-[#1313181a] flex flex-col items-center gap-4 lg:gap-6 py-6 lg:py-12 rounded-2xl">
+                    <div class="h-[185px] w-[91%] bg-[#bced6d1a] lg:h-[33.33%] rounded-2xl  pl-6 lg:pl-8 flex flex-col justify-center">
+                        <img class="w-[48px] h-[48px]" src="Images/phone.png" alt="">
+                        <p class="mt-6 lin leading-8">Phone Number : <br>
+                            <span class="font-extrabold text-lg">(+62) 123-321-543</span></p>
+                    </div>
+                    <div class="h-[185px] w-[91%] bg-[#fddd5f1a] lg:h-[33.33%] rounded-2xl  pl-6 lg:pl-8 flex flex-col justify-center">
+                        <img class="w-[48px] h-[48px]" src="Images/cursor.png" alt="">
+                        <p class="mt-6 lin leading-8">Email : <br>
+                            <span class="font-extrabold text-lg">hockeys@support.com</span></p>
+                    </div>
+                    <div class="h-[185px] w-[91%] bg-[#629cf31a] lg:h-[33.33%] rounded-2xl  pl-6 lg:pl-8 flex flex-col justify-center">
+                        <img class="w-[48px] h-[48px]" src="Images/map.png" alt="">
+                        <p class="mt-6 lin leading-8">Location : <br>
+                            <span class="font-extrabold text-lg">152/1 Mohakhali Wireless Gate</span></p>
+                    </div>
+                    
+                </div>
+                <div class="w-[100%] lg:w-[60%] ">
+                    <div class="w-full flex flex-wrap gap-5 lg:gap-6">
+                        <div class="w-[100%] lg:w-[48.5%]">
+                        
+                            <label for="name" class="text-xl font-bold">Your Name</label>
+                            <input type="text" class="w-full h-[64px] rounded-xl mt-4 pl-5 bg-[#13131808]" placeholder="Enter your full name ">
+                        </div>
+                        <div class="w-[100%] lg:w-[48.5%]">
+                        
+                            <label for="name" class="text-xl font-bold">Your Email</label>
+                            <input type="text" class="w-full h-[64px] rounded-xl mt-4 pl-5 bg-[#13131808]" placeholder="Enter your email ">
+                        </div>
+                        <div class="w-[100%] lg:w-[48.5%]">
+                        
+                            <label for="name" class="text-xl font-bold">Subject</label>
+                            <input type="text" class="w-full h-[64px] rounded-xl mt-4 pl-5 bg-[#13131808]" placeholder="Enter your subject ">
+                        </div>
+                        <div class="w-[100%] lg:w-[48.5%]">
+                        
+                            <label for="name" class="text-xl font-bold">Phone Number</label>
+                            <input type="text" class="w-full h-[64px] rounded-xl mt-4 pl-5 bg-[#13131808]" placeholder="Enter your phone number ">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="w-[100%] mt-5 lg:mt-6">
+                        <label for="name" class="text-xl font-bold">Message</label>
+                        <textarea name="" id="" class="border-none outline-none rounded-xl mt-4 bg-[#13131808] w-[100%] h-[200px] lg:h-[360px] pt-5 pl-5" placeholder="Write your message"></textarea>
+                    </div>
+                    <button class="btn-primary w-full h-[57px] mt-6 lg:mt-7">Send Message</button>
+                </div>
+            </div>
+            <div class="w-full h-[140px] lg:h-[150px] mt-10 lg:mt-12 rounded-xl bg-[#13131808] flex flex-col justify-center items-center gap-6">
+                <h1 class="font-extrabold text-2xl ">Social Media</h1>
+                <img src="social.svg" alt="">
+            </div>
+        </section>
+
+
+
+    </main>
 </body>
 </html>
